@@ -1,0 +1,18 @@
+@use "./assets/sass/_variables.scss" as *;
+
+.ticket-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    align-content: center;
+    justify-content: center;
+    gap: 60px 20px; 
+    grid-template-areas: 
+    ". . . . ."
+    ". . . . .";
+    width: auto;
+    margin: auto;
+    height: 90vh;
+    // padding: 30px;
+    margin: 20px;
+}
