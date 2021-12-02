@@ -1,0 +1,10 @@
+.ticket-tile__personal {
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+
+    &-info {
+        text-align: center;
+        font-size: 12px;
+    }
+}

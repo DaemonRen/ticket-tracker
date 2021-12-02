@@ -1,3 +1,4 @@
+import "./PersonalInfo.scss"
 
 const PersonalInfo = (props) => {
   return (

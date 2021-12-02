@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Counter.scss"
 import Button from "../Button/Button";
 
 const Counter = () => {
@@ -17,10 +18,10 @@ const Counter = () => {
   };
 
   return (
-    <div className="ticket-tile__info">
-      <Button isPlus={true} onClick={handleIncrement} />
-      <p>{counter}</p>
+    <div className="ticket-tile__counter">
       <Button isPlus={false} onClick={handleDecrement} />
+      <p className="ticket-tile__counter-number">{counter}</p>
+      <Button isPlus={true} onClick={handleIncrement} />
     </div>
   );
 };

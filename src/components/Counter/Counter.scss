@@ -1,0 +1,9 @@
+.ticket-tile__counter {
+    display: flex;
+    justify-content: space-around;
+    bottom: 40px;
+
+    &-number {
+        padding: 0 10px;
+    }
+}

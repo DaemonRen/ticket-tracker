@@ -1,21 +1,39 @@
 @use "./assets/sass/_variables.scss" as *;
 
-.ticket-container {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
-    align-content: center;
-    justify-content: center;
-    gap: 60px 20px; 
-    grid-template-areas: 
-    ". ."
-    ". ."
-    ". ."
-    ". ."
-    ". .";
-    width: auto;
-    margin: auto;
-    height: 250vh;
-    // padding: 30px;
-    margin: 20px;
+.ticket{
+    background-color: #adecff9c;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &-container {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+        align-content: center;
+        justify-content: center;
+        gap: 40px 15px; 
+        grid-template-areas: 
+        ". ."
+        ". ."
+        ". ."
+        ". ."
+        ". .";
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .ticket-container {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        align-content: center;
+        justify-content: center;
+        gap: 10vh 5vw; 
+        grid-template-areas: 
+        ". . . . ."
+        ". . . . .";
+    }
 }

@@ -6,5 +6,11 @@
     border-bottom: 4px solid #01c9fb;
     border-right: 4px solid #01c9fb;
     border-radius: 30px;
-    border-bottom-right-radius: 100px;
+    border-bottom-right-radius: 80px;
+    height: 250px;
+}
+
+@media screen and (min-width: 992px) {
+    .ticket-tile {width: 200px;
+    }
 }

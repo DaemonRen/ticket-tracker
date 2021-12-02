@@ -1,10 +1,12 @@
+import "./Button.scss";
+
 const Button = ({ isPlus, onClick }) => {
   // isPlus ? true : false;
 
   if (isPlus === true) {
-    return <button onClick={onClick}>+</button>;
+    return <button className="button-plus" onClick={onClick}>+</button>;
   } else {
-    return <button onClick={onClick}>-</button>;
+    return <button className="button-minus" onClick={onClick}>-</button>;
   }
 };
 
